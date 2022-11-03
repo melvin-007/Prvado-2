@@ -19,7 +19,6 @@ namespace Prvado.CAPAPRESENTACION
         {
             InitializeComponent();
         }
-
         ClsNominas objproducto = new ClsNominas();
         string Operacion = "Insertar";
         string idnom;
@@ -45,10 +44,8 @@ namespace Prvado.CAPAPRESENTACION
             ClsNominas objprod = new ClsNominas();
             dgvNominas.DataSource = objprod.ListarNominas();
         }
-
         private void VistaBaseDatos()
         {
-
             ClsNominas obj = new ClsNominas();
             dgvNominas.DataSource = obj.tablanominas();
             //DGVCategorias.DataSource = obj.ListarCategorias();
@@ -69,8 +66,6 @@ namespace Prvado.CAPAPRESENTACION
             txtAdelantosueldo.Clear();
 
             txtSueldototal.Clear();
-
-
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

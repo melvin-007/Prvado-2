@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-
 namespace Prvado.CAPADATOS
 {
     class ClsNominas
@@ -14,9 +13,7 @@ namespace Prvado.CAPADATOS
         private SqlCommand Comando = new SqlCommand();
         private SqlDataReader LeerFilas;
 
-
         private int idnom;
-
         private int idEmpleado;
         private string dpi;
         private string nombres;
@@ -34,8 +31,6 @@ namespace Prvado.CAPADATOS
         private int adelantosueldo;
         private double sueldototal;
         private DateTime fechanomina;
-
-
         //metodos get y set
         public int _Idnom
         {
@@ -51,8 +46,7 @@ namespace Prvado.CAPADATOS
         {
             get { return dpi; }
             set { dpi = value; }
-        }
-      
+        }     
         public string _Nombres
         {
             get { return nombres; }

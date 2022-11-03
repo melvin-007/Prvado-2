@@ -92,6 +92,12 @@
       <DependentUpon>CrystalReport2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CAPAPRESENTACION\CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CAPAPRESENTACION\Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,11 +128,23 @@
     <Compile Include="CAPAPRESENTACION\ReporteEmpleados.Designer.cs">
       <DependentUpon>ReporteEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAPAPRESENTACION\ReporteEmpleados3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAPAPRESENTACION\ReporteEmpleados3.Designer.cs">
+      <DependentUpon>ReporteEmpleados3.cs</DependentUpon>
+    </Compile>
     <Compile Include="CAPAPRESENTACION\ReporteNominas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CAPAPRESENTACION\ReporteNominas.Designer.cs">
       <DependentUpon>ReporteNominas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAPAPRESENTACION\Reporteparametro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporteparametro.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -156,6 +174,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport2.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CAPAPRESENTACION\CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CAPAPRESENTACION\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,8 +193,15 @@
     <EmbeddedResource Include="CAPAPRESENTACION\ReporteEmpleados.resx">
       <DependentUpon>ReporteEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CAPAPRESENTACION\ReporteEmpleados3.resx">
+      <DependentUpon>ReporteEmpleados3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CAPAPRESENTACION\ReporteNominas.resx">
       <DependentUpon>ReporteNominas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAPAPRESENTACION\Reporteparametro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reporteparametro.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

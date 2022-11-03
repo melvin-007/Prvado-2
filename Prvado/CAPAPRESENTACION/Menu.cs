@@ -69,5 +69,19 @@ namespace Prvado.CAPAPRESENTACION
             ConsultarAreas areas = new ConsultarAreas();
             areas.Show();
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReporteEmpleado empleados = new ReporteEmpleado();
+            empleados.Show();
+        }
+
+        private void reporteDePruebaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReporteEmpleados3 empleados = new ReporteEmpleados3();
+            empleados.Show();
+        }
     }
 }

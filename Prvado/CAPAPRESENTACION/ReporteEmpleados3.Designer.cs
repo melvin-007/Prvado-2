@@ -1,6 +1,6 @@
 ﻿namespace Prvado.CAPAPRESENTACION
 {
-    partial class ReporteEmpleado
+    partial class ReporteEmpleados3
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CrystalReport11 = new Prvado.CAPAPRESENTACION.CrystalReport1();
+            this.Reporteparametro1 = new Prvado.CAPAPRESENTACION.Reporteparametro();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -40,18 +40,18 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CrystalReport11;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(842, 447);
+            this.crystalReportViewer1.ReportSource = this.Reporteparametro1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(905, 471);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // ReporteEmpleado
+            // ReporteEmpleados3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 447);
+            this.ClientSize = new System.Drawing.Size(905, 471);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "ReporteEmpleado";
-            this.Text = "ReporteEmpleado";
+            this.Name = "ReporteEmpleados3";
+            this.Text = "ReporteEmpleados3";
             this.ResumeLayout(false);
 
         }
@@ -59,6 +59,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private CrystalReport1 CrystalReport11;
+        private Reporteparametro Reporteparametro1;
     }
 }

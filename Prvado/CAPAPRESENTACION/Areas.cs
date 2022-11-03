@@ -21,7 +21,7 @@ namespace Prvado.CAPAPRESENTACION
         ClsAreas objproducto = new ClsAreas();
         string Operacion = "Insertar";
         string idar;
-
+    
         private void Areas_Load(object sender, EventArgs e)
         {
             ListarGridAreas();
@@ -35,19 +35,16 @@ namespace Prvado.CAPAPRESENTACION
         }
         private void VistaBaseDatos()
         {
-
             ClsAreas obj = new ClsAreas();
             dgvAreas.DataSource = obj.tablaareas();
             //DGVCategorias.DataSource = obj.ListarCategorias();
             //DGVMarcas.DataSource = obj.ListarMarcas();
         }
-
         private void LimpiarFormulario()
         {
             txtArea.Clear();
             txtDescripcion.Clear();
         }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 

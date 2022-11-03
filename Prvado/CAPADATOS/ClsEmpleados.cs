@@ -9,7 +9,6 @@ namespace Prvado.CAPADATOS
 {
     class ClsEmpleados
     {
-
         private ConexionBD Conexion = new ConexionBD();
         private SqlCommand Comando = new SqlCommand();
         private SqlDataReader LeerFilas;
@@ -25,14 +24,12 @@ namespace Prvado.CAPADATOS
         private string telefono;
         private string cargo;
         private string sueldo;
-
         //metodos get y set
         public int _Idemp
         {
             get { return idemp; }
             set { idemp = value; }
         }
-
         public int _IdArea
         {
             get { return idArea; }
@@ -79,9 +76,7 @@ namespace Prvado.CAPADATOS
             get { return sueldo; }
             set { sueldo = value; }
         }
-
         //METODOS/FUNCIONES
-
         public DataTable ListarAreas()
         {
             DataTable Tabla = new DataTable();

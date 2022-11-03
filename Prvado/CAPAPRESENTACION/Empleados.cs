@@ -20,7 +20,6 @@ namespace Prvado.CAPAPRESENTACION
         ClsEmpleados objproducto = new ClsEmpleados();
         string Operacion = "Insertar";
         string idemp;
-
         private void Empleados_Load(object sender, EventArgs e)
         {
             ListarComboArea();
@@ -36,13 +35,11 @@ namespace Prvado.CAPAPRESENTACION
         private void ListarGridAreas()
         { /*IGNORAR ESTA LINEA ->*/
             VistaBaseDatos();/*<- IGNORAR ESTA LINEA*/
-
             ClsEmpleados objprod = new ClsEmpleados();
             dgvEmpleados.DataSource = objprod.ListarEmpleados();
         }
         private void VistaBaseDatos()
         {
-
             ClsEmpleados obj = new ClsEmpleados();
             dgvEmpleados.DataSource = obj.tablaempleados();
             //DGVCategorias.DataSource = obj.ListarCategorias();
@@ -60,7 +57,6 @@ namespace Prvado.CAPAPRESENTACION
             txtCargo.Clear();
             txtSueldo.Clear();
         }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (Operacion == "Insertar")
@@ -81,7 +77,6 @@ namespace Prvado.CAPAPRESENTACION
             }
             else if (Operacion == "Editar")
             {
-
                 objproducto._IdArea = Convert.ToInt32(cbArea.SelectedValue);
                 objproducto._Dpi = txtDpi.Text;
                 objproducto._Nombres = txtNombres.Text;
@@ -101,7 +96,6 @@ namespace Prvado.CAPAPRESENTACION
             //Limpiar texboxs
             LimpiarFormulario();
         }
-
         private void btnbuscar2_Click(object sender, EventArgs e)
         {
             SqlConnection cn = new SqlConnection("Data Source=Melvin\\SQLEXPRESS;Initial Catalog=umg1;Integrated Security=True");
@@ -121,7 +115,6 @@ namespace Prvado.CAPAPRESENTACION
 
             cn.Close();
         }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (dgvEmpleados.SelectedRows.Count > 0)
@@ -142,8 +135,6 @@ namespace Prvado.CAPAPRESENTACION
             }
             else
                 MessageBox.Show("debe seleccionar una fila");
-
-
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -158,7 +149,6 @@ namespace Prvado.CAPAPRESENTACION
             else
                 MessageBox.Show("Seleccione una fila");
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Menu menu = new Menu();

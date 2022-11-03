@@ -46,8 +46,9 @@
             this.crearNominaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mantenimientoDeAresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.reporteDePruebaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.calculadoraToolStripMenuItem.Text = "Calculadora";
             // 
             // utilitariosToolStripMenuItem
@@ -75,27 +76,27 @@
             // calendarioToolStripMenuItem
             // 
             this.calendarioToolStripMenuItem.Name = "calendarioToolStripMenuItem";
-            this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.calendarioToolStripMenuItem.Text = "Calendario";
             // 
             // nominasToolStripMenuItem1
             // 
             this.nominasToolStripMenuItem1.Name = "nominasToolStripMenuItem1";
-            this.nominasToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.nominasToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.nominasToolStripMenuItem1.Text = "Nominas";
             this.nominasToolStripMenuItem1.Click += new System.EventHandler(this.nominasToolStripMenuItem1_Click);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.usuariosToolStripMenuItem.Text = "Areas";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem1
             // 
             this.empleadosToolStripMenuItem1.Name = "empleadosToolStripMenuItem1";
-            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.empleadosToolStripMenuItem1.Text = "Empleados";
             this.empleadosToolStripMenuItem1.Click += new System.EventHandler(this.empleadosToolStripMenuItem1_Click);
             // 
@@ -128,6 +129,7 @@
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.empleadosToolStripMenuItem.Text = "Reporte de Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // nominasToolStripMenuItem
             // 
@@ -140,7 +142,8 @@
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nominasToolStripMenuItem,
             this.empleadosToolStripMenuItem,
-            this.reporteDeUsuariosToolStripMenuItem});
+            this.reporteDeUsuariosToolStripMenuItem,
+            this.reporteDePruebaToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -183,6 +186,13 @@
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.menuToolStripMenuItem.Text = "Mantenimientos";
             // 
+            // mantenimientoDeAresasToolStripMenuItem
+            // 
+            this.mantenimientoDeAresasToolStripMenuItem.Name = "mantenimientoDeAresasToolStripMenuItem";
+            this.mantenimientoDeAresasToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.mantenimientoDeAresasToolStripMenuItem.Text = "Mantenimiento de Areas";
+            this.mantenimientoDeAresasToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoDeAresasToolStripMenuItem_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -198,12 +208,12 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // mantenimientoDeAresasToolStripMenuItem
+            // reporteDePruebaToolStripMenuItem
             // 
-            this.mantenimientoDeAresasToolStripMenuItem.Name = "mantenimientoDeAresasToolStripMenuItem";
-            this.mantenimientoDeAresasToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.mantenimientoDeAresasToolStripMenuItem.Text = "Mantenimiento de Areas";
-            this.mantenimientoDeAresasToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoDeAresasToolStripMenuItem_Click);
+            this.reporteDePruebaToolStripMenuItem.Name = "reporteDePruebaToolStripMenuItem";
+            this.reporteDePruebaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.reporteDePruebaToolStripMenuItem.Text = "Reporte de Prueba";
+            this.reporteDePruebaToolStripMenuItem.Click += new System.EventHandler(this.reporteDePruebaToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -243,5 +253,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoDeAresasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteDePruebaToolStripMenuItem;
     }
 }
